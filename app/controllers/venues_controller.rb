@@ -1,8 +1,13 @@
 class VenuesController < ApplicationController
 
 	def index
-		# @venues = "where teh venues will go"
-		@venues = Venue.all
+		if params[:search].present?
+			@venues = Venue.near(params[:search], 2)
+
+		else
+			@venues = Venue.all
+		end
+		
 	end
 
 	def new

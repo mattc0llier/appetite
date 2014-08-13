@@ -1,5 +1,13 @@
 <%= link_to "add a venue", new_venue_path %>
 
+<%= form_tag venues_path, :method => :get do %>
+	<p>
+		<%= text_field_tag :search, params[:search] %>
+		<%= submit_tag "Search Near", :name => nil %>
+	</p>
+<% end %>
+
+
 <ul>
 	<% @venues.each do |v| %>
 
