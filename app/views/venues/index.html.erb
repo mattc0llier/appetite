@@ -1,13 +1,15 @@
 <%= link_to "add a venue", new_venue_path %>
 
-<% @venues.each do |v| %>
+<ul>
+	<% @venues.each do |v| %>
 
-	<%= v.title %>
-	<%= v.address %>
-	<%= v.latitude %>
-	<%= v.longitude %>
+		<li data-lat="<%= v.latitude %>" data-lng="<%= v.longitude %>">
+			<h3><%= v.title %></h3>
+			<p><%= v.address %></p>
+		</li>
 
-<% end %>
+	<% end %>
+</ul>
 
 <section id="map"></section>
 
