@@ -1,10 +1,11 @@
-<h1>index</h1>
+<%= link_to "add a venue", new_venue_path %>
 
-<% @venues.each do |venue| %>
+<% @venues.each do |v| %>
 
-	<h2><%= venue.title %></h2>
-
-	<p><%= venue.address %></p>
+	<%= v.title %>
+	<%= v.address %>
+	<%= v.latitude %>
+	<%= v.longitude %>
 
 <% end %>
 
