@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/tmcdb/steer-rb.git
+  revision: d1476299b56d78ac4edf343247d3731f841e59d0
+  specs:
+    steer (0.4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -84,6 +90,9 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    simple_form (3.0.2)
+      actionpack (~> 4.0)
+      activemodel (~> 4.0)
     spring (1.1.3)
     sprockets (2.11.0)
       hike (~> 1.2)
@@ -119,7 +128,9 @@ DEPENDENCIES
   rails (= 4.1.4)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
+  simple_form
   spring
   sqlite3
+  steer!
   turbolinks
   uglifier (>= 1.3.0)
