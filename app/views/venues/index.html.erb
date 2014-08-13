@@ -1,4 +1,4 @@
-<%= link_to "add a venue", new_venue_path %>
+<h1><%= link_to "Appetite", root_path %></h1>
 
 <%= form_tag venues_path, :method => :get do %>
 	<p>
@@ -19,5 +19,9 @@
 	<% end %>
 </ul>
 
+<%= link_to "add a venue", new_venue_path %>
+
 <section id="map"></section>
+
+
 

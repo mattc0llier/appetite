@@ -4,4 +4,8 @@ class Venue < ActiveRecord::Base
 
 	after_validation :geocode
 
+	validates :address, presence: true, uniqueness: true
+
+	validates :title, presence: true, uniqueness: true
+
 end
