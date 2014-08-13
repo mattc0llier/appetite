@@ -1,6 +1,12 @@
 <h1>index</h1>
 
-<%= @venues %>
+<% @venues.each do |venue| %>
+
+	<h2><%= venue.title %></h2>
+
+	<p><%= venue.address %></p>
+
+<% end %>
 
 <section id="map"></section>
 

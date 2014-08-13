@@ -42,3 +42,5 @@ gem 'steer', github:'tmcdb/steer-rb'
 
 gem 'simple_form'
 
+gem 'geocoder'
+
