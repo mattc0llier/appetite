@@ -6,6 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-venue = Venue.create(title: "Matt's house", address: "39 packington street", 
-					latitude: "51.536360", longitude: "-0.096984" )
+Venue.create([{title: "Matt's house"}, { address: "39 packington street" }, 
+					{ latitude: "51.536360" }, { longitude: "-0.096984" }])
 venue.save
