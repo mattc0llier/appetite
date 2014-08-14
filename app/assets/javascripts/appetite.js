@@ -45,7 +45,13 @@ $(document).ready(function () {
 	}
 
 
-	map.fitBounds(bounds);
+
+  if(bounds._northEast === undefined){
+    map.fitBounds(bounds.extend([51.525319, -0.110153]));
+  } else {
+    map.fitBounds(bounds);
+  }
+
 
 
 

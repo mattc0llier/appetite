@@ -5,6 +5,8 @@
 	</p>
 <% end %>
 
+<%= link_to "add a venue", new_venue_path, class: 'button' %>
+
 
 <ul>
 	<% @venues.each do |v| %>
@@ -24,8 +26,6 @@
 
 	<% end %>
 </ul>
-
-<%= link_to "add a venue", new_venue_path %>
 
 <section id="map"></section>
 

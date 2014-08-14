@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/tmcdb/steer-rb.git
-  revision: 740844fb2680a58121191a77fe796b4c53e6f82a
+  revision: b67e32241a237e8fd4dfabfe6db0c534e85f9e62
   specs:
     steer (0.4.0)
 
