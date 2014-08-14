@@ -57,7 +57,7 @@ li {
 	background-position: 20px 12px;
 	padding: 10px 20px 10px 45px;
 	transition: background 0.25s;
-	background-image: image_tag("redicon.png");
+	background-image: url(/assets/redicon.png);
 }
 
 li:hover {

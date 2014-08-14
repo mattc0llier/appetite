@@ -15,15 +15,12 @@
 			<h3><%= v.title %></h3>
 			<p><%= v.address %></p>
 
-		<% if params[:search].present? %>
-			<p><%= v.distance.round(2) %> miles</p>
+			<% if params[:search].present? %>
+				<p><%= v.distance.round(2) %> miles</p>
 
-		<% else %>
-			
-		<% end %>
-
-
-			
+			<% else %>
+				
+			<% end %>	
 
 		</li>
 
